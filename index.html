@@ -20,11 +20,11 @@ layout: default
       </div><!--//navbar-header-->
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-          <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
-          <li class="nav-item"><a class="scrollto" href="#join">Join Us</a></li>
-          <li class="nav-item"><a class="scrollto" href="#contact">Contact</a></li>
-          <li class="nav-item last"><a class="scrollto highlight" href="#donate">Donate</a></li>
+          <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Silberburg</a></li>
+          <li class="nav-item"><a class="scrollto" href="#about">Über uns</a></li>
+          <li class="nav-item"><a class="scrollto" href="#join">Mitmachen</a></li>
+          <li class="nav-item"><a class="scrollto" href="#contact">Kontakt</a></li>
+          <li class="nav-item last"><a class="scrollto highlight" href="#donate">Spenden</a></li>
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->
     </nav><!--//main-nav-->
@@ -38,7 +38,7 @@ layout: default
     <p class="intro">{{ site.org_summary }}</p>
     <div class="btns">
       <!--a class="btn btn-cta-secondary" href="#" target="_blank">Demo</a-->
-      <a class="btn btn-outline btn-outline-medium scrollto" href="#about" target="_blank">Learn More <i class="fa fa-angle-double-down"></i></a>
+      <a class="btn btn-outline btn-outline-medium scrollto" href="#about" target="_blank">Was bloss hier los? <i class="fa fa-angle-double-down"></i></a>
     </div>
     <ul class="meta list-inline">
       <li></li>
@@ -67,7 +67,7 @@ layout: default
 <!-- ******ABOUT****** -->
 <section id="about" class="about section">
   <div class="container">
-    <h2 class="title text-center">About Us</h2>
+    <h2 class="title text-center">Über uns</h2>
     <p class="intro text-center">{{ site.org_full_description }}</p>
   </div><!--//container-->
 </section><!--//about-->
@@ -78,17 +78,17 @@ layout: default
     <h2 class="title">Join Us</h2>
     <div class="row">
       <div class="col-sm-5 col-sm-offset-1 text-right text-right-sm">
-        <h1 class="join-us-intro">We Need Your Voice.<br> Join Us!</h1>
+        <h1 class="join-us-intro">We brauchen dich.<br> Join Us!</h1>
       </div>
       <div class="col-sm-5 text-left text-left-sm">
-        <p>Sign up to receive updates, progress reports and ways to get involved. We're excited to have you join our amazing community!</p>
+        <p>Wenn du wissen willst wie es hier weitergeht, trag dich für den sibu-newsletter ein :)!</p>
         {% if site.tinyletter_username %}
-        <p><em>No spam. Just the occasional update.</em></p>
+        <p><em>Nkein spam. Nur das übliche update.</em></p>
         <div class="row">
           <div class="col-sm-12">
             <form class="form-inline" role="form" action="https://tinyletter.com/{{ site.tinyletter_username }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter_username }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
               <div class="input-group input-group-lg col-sm-12">
-                <label class="sr-only" for="tlemail">Email address</label>
+                <label class="sr-only" for="tlemail">Email addresse</label>
                 <input type="email" class="form-control" name="email" id="tlemail" placeholder="email address" />
                 <div class="input-group-btn">
                   <button type="submit" class="button btn btn-cta-secondary">Join Us!</button>
@@ -98,22 +98,22 @@ layout: default
           </div>
         </div>
         {% elsif site.mailchimp_embed_code %}
-        <p><em>No spam. Just the occasional update.</em></p>
+        <p><em>kein spam. Nur das  update.</em></p>
         <div id="mc_embed_signup">
           <form action="{{ site.mailchimp_embed_code }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate bs-component" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
               <div class="form-group">
-                <label for="mce-EMAIL" class="sr-only">Email Address</label>
+                <label for="mce-EMAIL" class="sr-only">Email Addresse</label>
                 <input placeholder="email address" type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-xs-6">
-                    <label for="mce-FNAME" class="sr-only">Given / First Name </label>
+                    <label for="mce-FNAME" class="sr-only">VorName </label>
                     <input placeholder="given / first name" type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
                   </div>
                   <div class="col-xs-6">
-                    <label for="mce-LNAME" class="sr-only">Family / Last Name </label>
+                    <label for="mce-LNAME" class="sr-only">FamilienName </label>
                     <input placeholder="family / last name" type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
                   </div>
                 </div>
@@ -151,7 +151,7 @@ layout: default
     <div class="donate-inner">
       <h2 class="title text-center">Donate</h2>
       <div class="info">
-        <p><strong>Become a donor today.</strong><br>As a small grassroots organization, know that every dollar will have an immense impact on our ability to continue working towards our mission.</p>
+        <p><strong>Werde heute Spender*in.</strong><br>Da wir ein kleiner Kollektivbetrieb sind, zählt jeder euro.</p>
         {% if site.donorbox_campaign_name %}
           <div class="donorbox text-center">
             <iframe src="https://donorbox.org/embed/{{ site.donorbox_campaign_name }}" height="600px" width="100%" style="max-width:500px; min-width:310px" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
